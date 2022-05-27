@@ -6,4 +6,6 @@ Semester: 2201
 
 Module: Web Design and Development
 
-Web URL: https://hazminfirdaus.github.io/petr-bakla/
+<html>
+Web URL: <a href="https://hazminfirdaus.github.io/petr-bakla/" target="blank"></a>
+</html>
