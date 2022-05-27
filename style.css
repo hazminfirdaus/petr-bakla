@@ -518,8 +518,7 @@ h2 {
 #grid .container .title:hover  {
     background-color: #fff;
     color: #1a1a1a;
-}
-
+} 
 #grid div {
     transform: translate(0,8rem);
     opacity: 1;
