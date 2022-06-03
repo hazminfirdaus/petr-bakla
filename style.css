@@ -45,9 +45,15 @@ body {
     z-index: 99;
 }
 
-#loading-image {
+#loading img {
     z-index: 100;
     width: 300px;
+}
+
+@media (max-width: 600px) {
+    #loading img {
+        width: 150px;
+    }
 }
 
 header {
