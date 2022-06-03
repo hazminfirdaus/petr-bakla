@@ -134,7 +134,7 @@ header::before {
     list-style-type: none;
     margin: 0;
     padding: 4rem 0 0 0;
-    background-image: url(media/logo-piano-32x32.png);
+    background-image: url(media/favicon/favicon-32x32.png);
     background-repeat: no-repeat;
     background-position: center top;
 }
@@ -174,7 +174,7 @@ header::before {
         right: 1rem;
         transform: scale(0.8);
         cursor: pointer;
-        }
+    }
 
     #hamburger span {
         display: block;
@@ -307,6 +307,12 @@ header::before {
     border-color: #bbb; 
 }
 
+@media (max-width: 900px) {
+    #logo {
+        transform: scale(0.8);
+    }
+}
+
 h1 {
     text-align: center;
     line-height: 1;
@@ -343,11 +349,11 @@ h1 span:last-child {
 
 @media (max-width: 600px) {
     h1 {
-        transform: scale(0.6);
+        transform: scale(0.5);
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 380px) {
     h1 {
         transform: scale(0.4);
     }
@@ -403,7 +409,8 @@ h2 {
 
 @media (max-width:600px) {
     h2 {
-       padding-top: 5rem;
+        padding-top: 5rem;
+        transform: scale(0.8);
     }
 }
 
@@ -420,19 +427,23 @@ h2 {
     
     #biography div {
         flex-direction: column;
-    }
-    
-    #biography div {
-       max-width: 900px;
+        max-width: 900px;
     }
     
     #biography img {
-        transform: scale(0.8)
+        width: 250px;
+        height: 250px;
     }
     
     #biography div:nth-child(3), #biography div:nth-child(4) {
         display: none;
     } 
+}
+
+@media (max-width: 400px) {
+    #biography div {
+       max-width: 300px;
+    }
 }
  
 #biography div {
@@ -449,6 +460,20 @@ h2 {
     border-radius: 50%;
     box-shadow: 0 0 25px 20px rgba(0,0,0,0.5);
     margin: 0 3rem 3rem 3rem;
+}
+
+@media (max-width: 1200px) {
+    #biography img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 600px) {
+    #biography img {
+        width: 200px;
+        height: 200px;
+    }
 }
 
 #biography p {
@@ -504,7 +529,7 @@ h2 {
 
 @media (max-width:600px) {
     #grid .middle {
-        margin-top: -350px;
+       display: none;
     }
 }
 
@@ -565,6 +590,12 @@ audio {
     outline: none;
 }
 
+@media (max-width: 600px) {
+    audio {
+        transform: scale(0.8);
+    }
+}
+
 #streambtns {
     display: flex;
     justify-content: space-between;
@@ -573,10 +604,15 @@ audio {
 }
 
 @media (max-width: 900px) {
-    
     #streambtns {
         flex-direction: column;
-        max-width: 380px;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    #streambtns {
+        max-width: 250px;
     }
 }
 
@@ -599,8 +635,21 @@ audio {
     transition: all 0.4s;
 }
 
+@media (max-width: 900px) {
+    #streambtns a {
+        flex-direction: column;
+        align-content: center;
+    }
+}
+
 #streambtns a div:first-child {
     margin-right: 14px;
+}
+
+@media (max-width: 900px) {
+    #streambtns a div:first-child {
+        margin-right: 0;
+    }
 }
 
 #streambtns a div:last-child {
@@ -627,8 +676,21 @@ form {
     transition: all 0.3s;
 }
 
+@media (max-width: 600px) {
+    form {
+    transform: scale(0.8);
+    transition: all 0.3s;
+    }  
+}
+
 form:hover {
     transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+    form:hover {
+    transform: scale(0.9);
+    } 
 }
 
 label {
@@ -710,6 +772,12 @@ form span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 600px) {
+    #footer-social, #footer p {
+        transform: scale(0.8);
+    }
 }
 
 #footer-social {
