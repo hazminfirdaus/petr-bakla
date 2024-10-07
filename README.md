@@ -1,3 +1,11 @@
-This a repository for my portfolio.
+Petr Bakla Web Redesign
 
-Visit the page at {https://hazminfirdaus.github.io/portfolio}[Hazmin Chik]
+Name: Muhammad Hazmin Firdaus bin Chik
+
+Semester: 2201
+
+Module: Web Design and Development
+
+Repository URL: https://github.com/hazminfirdaus/petr-bakla
+
+Web URL: https://hazminfirdaus.github.io/petr-bakla
